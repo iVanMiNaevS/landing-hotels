@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">HOTELS</div>
+				<nav>
+					<ul>
+						<li><a href="./search.html">Поиск</a></li>
+						<li><a href="./login.html">Войти</a></li>
+						<li><a href="./profile.html">Личный кабинет</a></li>
+						<li><a href="#">Избранное</a></li>
+						<li><a href="#">Бронирования</a></li>
+						<li><a href="./orders-management.html">Мои заказы</a></li>
+						<li><span class="header__nav-item">8-800-777-55-77</span></li>
+						<li>
+							<a class="header__link-icon" href="#">🔔</a>
+						</li>
+						<li>
+							<a class="header__link-icon" href="#">❔</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<h2 class="profile__h2">Личный кабинет</h2>
+				<div class="profile__infos-wrapp">
+					<section class="profile__info">
+						<div class="profile">
+							<div class="profile-item">
+								<span>ФИО:</span> Иванов Иван Иванович <button class="second">Изменить</button>
+							</div>
+							<div class="profile-item">
+								<span>Паспорт:</span> 1234 567890 <button class="second">Изменить</button>
+							</div>
+							<div class="profile-item">
+								<span>Телефон:</span> +7 (900) 123-45-67 <button class="second">Изменить</button>
+							</div>
+							<div class="profile-item">
+								<span>Email:</span> ivanov@example.com <button class="second">Изменить</button>
+							</div>
+						</div>
+					</section>
+					<section class="profile__stats">
+						<div class="stats">
+							<div class="stats__item">⭐ <strong>Избранные отели:</strong> 4</div>
+							<div class="stats__item">🏨 <strong>Забронированные отели:</strong> 3</div>
+							<div class="stats__item">
+								📅 <strong>Даты проживания:</strong> 01.05.2025 – 10.05.2025
+							</div>
+							<div class="stats__item">💰 <strong>Стоимость проживания:</strong> 48 000 ₽</div>
+							<div class="stats__item">
+								❗ <strong>Отмена:</strong> Бесплатно до 28.04.2025, потом — 5 000 ₽
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="bookings">
+					<div class="booking-group confirmed">
+						<h2>✅ Подтверждено</h2>
+
+						<div class="booking">
+							<div><strong>Страна / Город:</strong> Турция, Анталья</div>
+							<div><strong>Даты:</strong> 01.05.2025 – 07.05.2025</div>
+							<div><strong>Комментарий:</strong> Номер с видом на море</div>
+							<img
+								src="./img/DeSallesFlint Infuses Puro Warsaw Hotel With Eclectic, Informal Aesthetic - Interior Design.jpg"
+								alt="Фото отеля"
+							/>
+							<div class="booking-actions">
+								<button class="three">Редактировать</button>
+								<button>Удалить</button>
+							</div>
+						</div>
+
+						<div class="booking">
+							<div><strong>Страна / Город:</strong> Россия, Сочи</div>
+							<div><strong>Даты:</strong> 08.05.2025 – 10.05.2025</div>
+							<div><strong>Комментарий:</strong> Завтрак включен</div>
+							<img src="./img/The Peninsula Shanghai.jpg" alt="Фото отеля" />
+							<div class="booking-actions">
+								<button class="three">Редактировать</button>
+								<button>Удалить</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="booking-group unconfirmed">
+						<h2>⚠️ Не подтверждено</h2>
+
+						<div class="booking">
+							<div><strong>Страна / Город:</strong> Грузия, Тбилиси</div>
+							<div><strong>Даты:</strong> 20.05.2025 – 25.05.2025</div>
+							<div><strong>Комментарий:</strong> Поздний заезд</div>
+							<img src="./img/загруженное.jpg" alt="Фото отеля" />
+							<div class="booking-actions">
+								<button class="three">Редактировать</button>
+								<button>Удалить</button>
+							</div>
+						</div>
+
+						<div class="booking">
+							<div><strong>Страна / Город:</strong> Италия, Рим</div>
+							<div><strong>Даты:</strong> 01.06.2025 – 05.06.2025</div>
+							<div><strong>Комментарий:</strong> Требуется детская кроватка</div>
+							<img
+								src="./img/DeSallesFlint Infuses Puro Warsaw Hotel With Eclectic, Informal Aesthetic - Interior Design.jpg"
+								alt="Фото отеля"
+							/>
+							<div class="booking-actions">
+								<button class="three">Редактировать</button>
+								<button>Удалить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="footer__contact">
+					<p><span>Телефон:</span>8-800-777-55-77</p>
+					<p><span>Email:</span> hotel@hotel.ru</p>
+					<p><a href="#">Клиентам</a></p>
+					<p><a href="#">Партнёрам</a></p>
+					<p><a href="#">О нас</a></p>
+					<p><a href="#">Контакты</a></p>
+				</div>
+				<div class="footer__nav">
+					<a href="./index.html">Главная</a>
+					<a href="./register.html">Регистрация</a>
+					<a href="./login.html">Авторизация</a>
+					<a href="./profile.html">Личный кабинет</a>
+					<a href="./search.html">Поиск</a>
+					<a href="#">Задать вопрос</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
