@@ -30,11 +30,11 @@
 			</div>
 		</header>
 		<main>
-			<div class="container">
+			<div class="container add">
 				<h2>Добавление отеля</h2>
 				<div class="add__box1">
 					<div class="add__input-wrapper">
-						<input type="tel" id="add__tel" placeholder="Введите контактный номер" />
+						<input type="tel" id="add__tel" placeholder="Контактный номер" />
 						<label for="add__tel">Контактный номер телефона отеля</label>
 					</div>
 					<div class="add__input-wrapper">
@@ -46,7 +46,11 @@
 						<label for="add__password">Пароль</label>
 					</div>
 					<div class="add__input-wrapper">
-						<input type="password" id="add__password-confirm" placeholder="Подтверждение пароля" />
+						<input
+							type="password"
+							id="add__password-confirm"
+							placeholder="Подтверждение пароля"
+						/>
 						<label for="add__password-confirm">Подтверждение пароля</label>
 					</div>
 				</div>
@@ -56,12 +60,18 @@
 						<label for="add__ur">Юр. данные отеля</label>
 					</div>
 					<div class="add__input-wrapper">
-						<input type="number" min="1" max="5" id="add__star" placeholder="Количество звёзд" />
+						<input
+							type="number"
+							min="1"
+							max="5"
+							id="add__star"
+							placeholder="Количество звёзд"
+						/>
 						<label for="add__star">Количество звёзд ⭐</label>
 					</div>
-					<div class="add__input-wrapper">
-						<input type="file" max="3" multiple id="add__foto" />
+					<div class="add__input-wrapper add__input-wrapper-img">
 						<label for="add__foto">Фото отеля</label>
+						<input type="file" max="3" multiple id="add__foto" />
 						<div class="add__foto-box">
 							<img
 								src="./img/DeSallesFlint Infuses Puro Warsaw Hotel With Eclectic, Informal Aesthetic - Interior Design.jpg"
@@ -77,7 +87,11 @@
 						<label for="add__dop">Дополнительная информация об отеле</label>
 					</div>
 					<div class="add__input-wrapper">
-						<input type="text" id="add__address" placeholder="Страна, город, район" />
+						<input
+							type="text"
+							id="add__address"
+							placeholder="Страна, город, район"
+						/>
 						<label for="add__address">Страна, город, район</label>
 					</div>
 					<div class="add__input-wrapper">
@@ -89,7 +103,7 @@
 						<label for="add__ud">Удобства в отеле</label>
 					</div>
 				</div>
-				<p>
+				<p class="add__personal">
 					<input type="checkbox" id="reg__personal" /><label for="reg__personal"
 						>Согласие на обработку персональных данных</label
 					>

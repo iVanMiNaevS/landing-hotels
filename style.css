@@ -676,3 +676,91 @@ footer a:active {
 	margin-right: 10px;
 	padding: 5px 10px;
 }
+
+.add {
+	max-width: 1100px;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.add img {
+	width: 100px;
+	aspect-ratio: 1/1;
+}
+
+.add__box1,
+.add__box2,
+.add__box3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 3rem;
+	border-bottom: 2px solid #2d2c2a25;
+	padding: 3rem;
+}
+
+.add__input-wrapper {
+	display: flex;
+	flex-flow: row-reverse;
+	flex: 1 1 45%;
+	gap: 1rem;
+	min-width: 300px;
+	align-items: center;
+	justify-content: start;
+}
+.add__input-wrapper input,
+textarea {
+	border-radius: 0.5rem 0.5rem 0rem 0rem;
+	width: 100%;
+	outline: none;
+	border: 2px solid var(--brown);
+}
+.add__input-wrapper-img {
+	display: block;
+}
+.add__input-wrapper-img input {
+	border: none;
+}
+.add__foto-box {
+	margin-top: 1rem;
+	display: flex;
+	gap: 1rem;
+}
+.add__personal {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: var(--large-text);
+}
+
+.search__page-form {
+	flex-shrink: 1;
+	border-radius: 0.4rem;
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+.search__page-form img {
+	width: 50%;
+	border-radius: 0.4rem 0px 0px 0.4rem;
+}
+.search__page-field {
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.sub-field #sub__personal {
+	margin-right: 0.3rem;
+}
+.search__page-field h4 {
+	font-size: 2.5rem;
+}
+.search__page-input {
+	width: 100%;
+	border-radius: 0.5rem 0.5rem 0rem 0rem;
+	border-bottom: 2px solid var(--green);
+}
+
+.search__page-button {
+	font-size: var(--def-text);
+}
