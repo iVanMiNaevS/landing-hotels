@@ -959,9 +959,29 @@ button.filter-button {
 }
 
 .admin.bookings {
-	margin-top: 5rem;
+	width: 100%;
+	box-shadow: none;
 }
-
+.admin__down-part {
+	display: flex;
+}
+.admin__down-part aside {
+	position: sticky;
+	top: 1rem;
+	padding: 1rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	box-shadow: var(--shadow);
+}
+.admin__down-part aside button {
+	border-bottom: 1px solid var(--black);
+	box-shadow: none;
+}
+.admin__down-part aside button.active {
+	background: var(--green);
+	color: white;
+}
 .admin .booking {
 	display: flex;
 	flex-direction: row;
