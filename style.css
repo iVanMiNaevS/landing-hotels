@@ -957,3 +957,41 @@ button.filter-button {
 .stars {
 	color: gold;
 }
+
+.admin.bookings {
+	margin-top: 5rem;
+}
+
+.admin .booking {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	justify-content: space-between;
+}
+.admin .booking__info {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.admin .booking-actions {
+	margin-top: auto;
+}
+.admin__filters {
+	box-shadow: var(--shadow);
+	width: 100%;
+	padding: 1rem;
+	margin-top: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.admin__filters p {
+	font-size: 2rem;
+}
+.admin__filters-btns button {
+	font-size: 1rem;
+}
+.admin__filters-btns {
+	display: flex;
+	gap: 1rem;
+}
