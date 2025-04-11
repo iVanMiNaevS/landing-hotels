@@ -731,12 +731,23 @@ textarea {
 	font-size: var(--large-text);
 }
 
+.search-page .container {
+	display: flex;
+}
+.search-page aside {
+	z-index: 100;
+	background: white;
+	width: 40%;
+	height: 80vh;
+	position: sticky;
+	top: 1rem;
+}
+
 .search__page-form {
 	flex-shrink: 1;
 	border-radius: 0.4rem;
 	display: flex;
 	width: 100%;
-	height: 500px;
 }
 .search__page-form img {
 	width: 50%;
@@ -819,12 +830,24 @@ textarea {
 	cursor: pointer;
 }
 .search__page-filters {
-	padding: 1.5rem 2rem;
 	border-radius: 0 0 0.4rem;
 	box-shadow: var(--shadow);
-	margin-bottom: 4rem;
 	border-top: 5px solid var(--black);
 	padding-top: 2rem;
+	padding-bottom: 2rem;
+	height: fit-content;
+	position: relative;
+	z-index: 100;
+}
+.filter-bar::-webkit-scrollbar {
+	width: 5px; /* ширина scrollbar */
+}
+.filter-bar::-webkit-scrollbar-track {
+	background: white; /* цвет дорожки */
+}
+.filter-bar::-webkit-scrollbar-thumb {
+	background-color: var(--green); /* whiцвет плашки */
+	border-radius: 20px; /* закругления плашки */
 }
 .search__page-filters h2 {
 	text-align: center;
@@ -833,15 +856,23 @@ textarea {
 	color: black;
 }
 .filter-bar {
+	position: relative;
+	z-index: 100;
+	background: white;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 1rem;
+	height: 75vh;
+	padding: 0px 1rem;
 	justify-content: center;
+	overflow-y: auto;
 }
 
-.filter-button {
-	padding: 8px 14px;
-
+button.filter-button {
+	padding: 1rem 14px;
+	width: 100%;
+	box-shadow: none;
+	border-bottom: 2px solid black;
 	font-size: var(--def-text);
 }
 
